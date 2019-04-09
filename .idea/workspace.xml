@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3159aa96-5537-4254-9006-01c0efb8bb88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileReader.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MathLib.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/MathLib.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/FileReaderTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/FileReaderTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MathLibTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/MathLibTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,19 +26,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/FileReaderTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FileReader.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+            <state relative-caret-position="112">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -45,8 +37,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MathLib.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="128">
+              <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/MathLibTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="131" lean-forward="true" selection-start-line="7" selection-start-column="131" selection-end-line="7" selection-end-column="131" />
+              <folding>
+                <element signature="e#0#126#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,10 +73,10 @@
         <option value="$PROJECT_DIR$/src/Main.kt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/MainTest.kt" />
+        <option value="$PROJECT_DIR$/src/FileReader.kt" />
+        <option value="$PROJECT_DIR$/test/FileReaderTest.kt" />
         <option value="$PROJECT_DIR$/src/MathLib.kt" />
         <option value="$PROJECT_DIR$/test/MathLibTest.kt" />
-        <option value="$PROJECT_DIR$/test/FileReaderTest.kt" />
-        <option value="$PROJECT_DIR$/src/FileReader.kt" />
       </list>
     </option>
   </component>
@@ -143,7 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FileReaderTest">
+  <component name="RunManager" selected="JUnit.MathLibTest.runs the extended euclidean algorithm correctly">
     <configuration name="FileReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rsa-in-kotlin" />
       <option name="PACKAGE_NAME" value="" />
@@ -158,6 +162,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rsa-in-kotlin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MathLibTest" />
+      <option name="METHOD_NAME" value="runs the extended euclidean algorithm correctly" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -177,6 +191,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MathLibTest.runs the extended euclidean algorithm correctly" />
         <item itemvalue="JUnit.FileReaderTest" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="Kotlin.MainKt" />
@@ -193,32 +208,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554818143350</updated>
-      <workItem from="1554818146612" duration="1830000" />
+      <workItem from="1554818146612" duration="5037000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest - 2019.04.09 at 16h 04m 05s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 38m 02s.xml">
+      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2019.04.09 at 16h 04m 41s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 40m 10s.xml">
+      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileReaderTest - 2019.04.09 at 16h 21m 30s.xml">
-      <configuration name="FileReaderTest" configurationId="JUnit" />
+    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 40m 33s.xml">
+      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileReaderTest - 2019.04.09 at 16h 25m 22s.xml">
-      <configuration name="FileReaderTest" configurationId="JUnit" />
+    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 41m 21s.xml">
+      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileReaderTest - 2019.04.09 at 16h 26m 35s.xml">
-      <configuration name="FileReaderTest" configurationId="JUnit" />
+    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 42m 27s.xml">
+      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileReaderTest - 2019.04.09 at 16h 26m 47s.xml">
-      <configuration name="FileReaderTest" configurationId="JUnit" />
+    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 43m 09s.xml">
+      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 43m 30s.xml">
+      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 43m 58s.xml">
+      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 44m 15s.xml">
+      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 45m 41s.xml">
+      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1830000" />
+    <option name="totallyTimeSpent" value="5037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -231,7 +258,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32920355" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
@@ -276,34 +303,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/MathLibTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/input/sk.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MathLib.kt">
+    <entry file="file://$PROJECT_DIR$/test/FileReaderTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        <state relative-caret-position="160">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.kt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/FileReaderTest.kt">
+    <entry file="file://$PROJECT_DIR$/src/FileReader.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileReader.kt">
+    <entry file="file://$PROJECT_DIR$/src/MathLib.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/MathLibTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="131" lean-forward="true" selection-start-line="7" selection-start-column="131" selection-end-line="7" selection-end-column="131" />
+          <folding>
+            <element signature="e#0#126#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

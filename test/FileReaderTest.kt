@@ -2,9 +2,12 @@ import org.junit.jupiter.api.Test
 
 class FileReaderTest {
     @Test fun `can read file`() {
-        val pk: String = readPrivateKey()
-        assert(pk.isNotEmpty())
-        assert(!pk.contains('('))
-        assert(!pk.contains(')'))
+        val privateKey = readKeyPair()
+        // There need to be exactly two entries in the list (n, d)
+        assert(privateKey.isNotEmpty())
+        assert(privateKey.size == 2)
+        // keypair needs to contain two valid BigInteger's
+        privateKey[0].toBigInteger()
+        privateKey[1].toBigInteger()
     }
 }
