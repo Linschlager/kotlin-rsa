@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3159aa96-5537-4254-9006-01c0efb8bb88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/FileReader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MathLib.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/MathLib.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/FileReaderTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/FileReaderTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/MainTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/MainTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/MathLibTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/MathLibTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/vettili1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/MathLib.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/ExtendedEuclideanAlgorithm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/MathLibTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/ExtendedEuclideanAlgorithmTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,59 +20,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/FileReader.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/MathLib.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/MathLibTest.kt">
+        <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/ExtendedEuclideanAlgorithm.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="49">
+              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
               <folding>
-                <element signature="e#0#100#0" expanded="true" />
+                <element signature="e#36#119#0" expanded="true" />
+                <element signature="n#!!block;n#EEAResult#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/FileReaderTest.kt">
+        <entry file="file://$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/ExtendedEuclideanAlgorithmTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="34" selection-start-column="34" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/MainTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="34" selection-start-column="34" selection-end-column="34" />
+            <state relative-caret-position="208">
+              <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -101,6 +64,10 @@
         <option value="$PROJECT_DIR$/test/FileReaderTest.kt" />
         <option value="$PROJECT_DIR$/test/MainTest.kt" />
         <option value="$PROJECT_DIR$/test/MathLibTest.kt" />
+        <option value="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/MathLib.kt" />
+        <option value="$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/MathLibTest.kt" />
+        <option value="$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/ExtendedEuclideanAlgorithmTest.kt" />
+        <option value="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/ExtendedEuclideanAlgorithm.kt" />
       </list>
     </option>
   </component>
@@ -165,6 +132,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowGraphQL.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa" />
@@ -193,54 +161,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MathLibTest.runs the extended euclidean algorithm correctly">
-    <configuration name="FileReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rsa-in-kotlin" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FileReaderTest" />
-      <option name="TEST_OBJECT" value="class" />
+  <component name="RunManager" selected="JUnit.Run all tests">
+    <configuration name="Run all tests" type="JUnit" factoryName="JUnit">
+      <option name="PACKAGE_NAME" value="ch.linusvettiger.kotlinrsa" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ch.linusvettiger.kotlinrsa.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="rsa-in-kotlin" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rsa-in-kotlin" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MathLibTest" />
-      <option name="METHOD_NAME" value="runs the extended euclidean algorithm correctly" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="rsa-in-kotlin" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="MAIN_CLASS_NAME" value="ch.linusvettiger.kotlinrsa.MainKt" />
+      <option name="WORKING_DIRECTORY" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.Run all tests" />
+      <item itemvalue="Kotlin.ch.linusvettiger.kotlinrsa.MainKt" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MathLibTest.runs the extended euclidean algorithm correctly" />
-        <item itemvalue="JUnit.FileReaderTest" />
-        <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Kotlin.ch.linusvettiger.kotlinrsa.MainKt" />
       </list>
     </recent_temporary>
   </component>
@@ -255,26 +209,11 @@
       <option name="presentableId" value="Default" />
       <updated>1554818143350</updated>
       <workItem from="1554818146612" duration="5037000" />
-      <workItem from="1554972694735" duration="210000" />
+      <workItem from="1554972694735" duration="1132000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 40m 10s.xml">
-      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 40m 33s.xml">
-      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 41m 21s.xml">
-      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 42m 27s.xml">
-      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 43m 09s.xml">
-      <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.09 at 17h 43m 30s.xml">
       <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
     </history-entry>
@@ -290,25 +229,40 @@
     <history-entry file="MathLibTest_runs_the_extended_euclidean_algorithm_correctly - 2019.04.11 at 10h 52m 10s.xml">
       <configuration name="MathLibTest.runs the extended euclidean algorithm correctly" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Run_all_tests - 2019.04.11 at 10h 56m 27s.xml">
+      <configuration name="Run all tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Run_all_tests - 2019.04.11 at 11h 06m 29s.xml">
+      <configuration name="Run all tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Run_all_tests - 2019.04.11 at 11h 08m 04s.xml">
+      <configuration name="Run all tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Run_all_tests - 2019.04.11 at 11h 08m 37s.xml">
+      <configuration name="Run all tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Run_all_tests - 2019.04.11 at 11h 10m 16s.xml">
+      <configuration name="Run all tests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5247000" />
+    <option name="totallyTimeSpent" value="6169000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25305623" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25305623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="GraphQL" />
+      <window_info anchor="bottom" id="GraphQL" weight="0.32924336" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32822084" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32822084" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -316,7 +270,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32920355" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32822084" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32920355" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -361,13 +315,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/MathLib.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/FileReaderTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -382,12 +329,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/MathLibTest.kt">
+    <entry file="file://$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/ExtendedEuclideanAlgorithmTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="208">
+          <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/ExtendedEuclideanAlgorithm.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
           <folding>
-            <element signature="e#0#100#0" expanded="true" />
+            <element signature="e#36#119#0" expanded="true" />
+            <element signature="n#!!block;n#EEAResult#0" />
           </folding>
         </state>
       </provider>
