@@ -4,7 +4,7 @@ import java.math.BigInteger
 import kotlin.math.pow
 
 fun fea(base: BigInteger, exponent: BigInteger, divisor: BigInteger): BigInteger {
-    var result = 1.toBigInteger() // Perform first modulo to remove an unnecessarily big base
+    var result = BigInteger.ONE
 
     // Find binary representation of exponent
     val binaryExponent = exponent.toString(2).reversed()
@@ -16,7 +16,7 @@ fun fea(base: BigInteger, exponent: BigInteger, divisor: BigInteger): BigInteger
 
     var counter = 0
     var runningPower = base.rem(divisor)
-    while (2.0.pow(counter).toInt().toBigInteger() < exponent) {
+    while (2.0.pow(counter).toBigDecimal().toBigInteger() < exponent) {
         // Compute base^(2*counter) mod divisor
         if (counter > 0) {
             runningPower *= runningPower
@@ -28,10 +28,5 @@ fun fea(base: BigInteger, exponent: BigInteger, divisor: BigInteger): BigInteger
         }
         counter ++
     }
-
-    println(binaryExponent)
-    println(list)
-    println("===[]===")
-
     return result.rem(divisor)
 }
