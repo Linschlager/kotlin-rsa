@@ -1,3 +1,5 @@
+package ch.linusvettiger.kotlinrsa
+
 import java.math.BigInteger
 
 class EEAResult(var gcd: BigInteger, var x0: BigInteger, var y0: BigInteger) {

@@ -1,3 +1,5 @@
+package ch.linusvettiger.kotlinrsa
+
 import java.io.File
 
 fun readKeyPair(): List<String> {
