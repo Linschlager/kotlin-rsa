@@ -1,7 +1,6 @@
 package ch.linusvettiger.kotlinrsa
 
 import java.math.BigInteger
-import kotlin.math.pow
 
 fun fea(base: BigInteger, exponent: BigInteger, divisor: BigInteger): BigInteger {
     var result = BigInteger.ONE
@@ -16,7 +15,7 @@ fun fea(base: BigInteger, exponent: BigInteger, divisor: BigInteger): BigInteger
 
     var counter = 0
     var runningPower = base.rem(divisor)
-    while (2.0.pow(counter).toBigDecimal().toBigInteger() < exponent) {
+    while (BigInteger.TWO.pow(counter) < exponent) {
         // Compute base^(2*counter) mod divisor
         if (counter > 0) {
             runningPower *= runningPower
