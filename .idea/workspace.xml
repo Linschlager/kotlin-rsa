@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="kotlin-rsa:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3159aa96-5537-4254-9006-01c0efb8bb88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/kotlin_rsa_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,26 +24,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1231">
-              <caret line="81" column="9" lean-forward="true" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+            <state relative-caret-position="349">
+              <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
               <folding>
                 <element signature="e#36#91#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="112">
-                <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -82,8 +78,8 @@
         <option value="$PROJECT_DIR$/input/test.txt" />
         <option value="$PROJECT_DIR$/input/private.txt" />
         <option value="$PROJECT_DIR$/input/cipher2.txt" />
-        <option value="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt" />
       </list>
     </option>
   </component>
@@ -107,8 +103,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,13 +125,8 @@
             <path>
               <item name="kotlin-rsa" type="b2602c69:ProjectViewProjectNode" />
               <item name="kotlin-rsa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kotlin-rsa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kotlin-rsa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlinrsa" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -156,6 +147,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
@@ -180,22 +174,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Kotlin.ch.linusvettiger.kotlinrsa.MainKt">
-    <configuration name="FastExponentiationAlgorithmTest.runs the algorithm correctly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rsa-in-kotlin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ch.linusvettiger.kotlinrsa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ch.linusvettiger.kotlinrsa" />
-      <option name="MAIN_CLASS_NAME" value="ch.linusvettiger.kotlinrsa.FastExponentiationAlgorithmTest" />
-      <option name="METHOD_NAME" value="runs the algorithm correctly" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Run all tests" type="JUnit" factoryName="JUnit">
       <option name="PACKAGE_NAME" value="ch.linusvettiger.kotlinrsa" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -209,10 +187,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JarApplication">
+      <option name="JAR_PATH" value="out" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
     <configuration name="ch.linusvettiger.kotlinrsa.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="rsa-in-kotlin" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="--file=input/cipher2.txt --private-key=input/private.txt --decrypt" />
+      <option name="PROGRAM_PARAMETERS" value="--file=input/cipher.txt --private-key=input/sk.txt --decrypt" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -220,17 +203,18 @@
       <option name="WORKING_DIRECTORY" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="kotlin-rsa:jar" />
+        </option>
       </method>
     </configuration>
     <list>
       <item itemvalue="JUnit.Run all tests" />
-      <item itemvalue="JUnit.FastExponentiationAlgorithmTest.runs the algorithm correctly" />
       <item itemvalue="Kotlin.ch.linusvettiger.kotlinrsa.MainKt" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.ch.linusvettiger.kotlinrsa.MainKt" />
-        <item itemvalue="JUnit.FastExponentiationAlgorithmTest.runs the algorithm correctly" />
       </list>
     </recent_temporary>
   </component>
@@ -246,6 +230,7 @@
       <updated>1554818143350</updated>
       <workItem from="1554818146612" duration="5037000" />
       <workItem from="1554972694735" duration="18434000" />
+      <workItem from="1555064031989" duration="1506000" />
     </task>
     <servers />
   </component>
@@ -282,13 +267,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31852000" />
+    <option name="totallyTimeSpent" value="34295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25611246" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2591687" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -305,7 +290,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3281075" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3281075" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3281075" />
       <window_info anchor="bottom" id="GraphQL" order="13" weight="0.32924336" />
@@ -372,30 +357,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" selection-start-column="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/input/test.txt" />
     <entry file="file://$PROJECT_DIR$/input/sk.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/private.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input/cipher2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1818" selection-start-column="1818" selection-end-column="1818" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/input/private.txt" />
+    <entry file="file://$PROJECT_DIR$/input/cipher2.txt" />
     <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/FileReader.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -447,13 +414,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt">
+    <entry file="file://$PROJECT_DIR$/out/production/rsa-in-kotlin/ch/linusvettiger/kotlinrsa/EEAResult.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1231">
-          <caret line="81" column="9" lean-forward="true" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-          <folding>
-            <element signature="e#36#91#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -467,12 +431,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <folding>
+            <element signature="e#36#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor>
+            <show-content>
+              <type id="artifact" />
+              <type id="jpa-descriptors" />
+              <type id="library" />
+              <type id="javaee-facet-resources" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>kotlin-rsa:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

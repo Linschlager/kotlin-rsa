@@ -33,38 +33,34 @@ fun main(args: Array<String>) {
             parts[0] == "--encrypt" -> programMode = "encrypt"
         }
     }
+    /*
+        Possible combination
+        - file + encrypt
+        - file + encrypt + pubKey
+        - file + decrypt + priKey
+
+        Impossible combination
+        - no inputFile
+        - decrypt + no priKey
+     */
 
     // Load the encrypted message
     val message = readMessage(inputFilePath)
     var keys = Keys(BigInteger.ZERO, BigInteger.ZERO, BigInteger.ZERO, BigInteger.ZERO) // Default initialisation
 
+    // Validate input
     if (inputFilePath.isBlank()) {
         error("Please pass the input using --file")
     }
     if (programMode == "decrypt" && privateKeyPath.isBlank()) {
-        error("To decrypt the data, you need to define the path to a private key file using --private-key")
+        error("To decrypt the data, you need to pass the path to a private key file using --private-key")
     }
-    if (!publicKeyPath.isBlank()) {
-        val inputKeys = readKeyPair(publicKeyPath).map { it.toBigInteger() }
-        keys = Keys(inputKeys[0], BigInteger.ZERO, inputKeys[1], BigInteger.ZERO)
-    }
-    if (!privateKeyPath.isBlank()) {
-        val inputKeys = readKeyPair(privateKeyPath).map { it.toBigInteger() }
-        keys = Keys(inputKeys[0], BigInteger.ZERO, BigInteger.ZERO, inputKeys[1])
-    }
-    if (publicKeyPath.isBlank() && privateKeyPath.isBlank()) {
-        var p: BigInteger = BigInteger.ZERO
-        var q: BigInteger = BigInteger.ZERO
 
-        while (!p.isProbablePrime(1024)) {
-            p = Random.nextLong(0, Long.MAX_VALUE).toBigInteger()
-        }
-        while (!q.isProbablePrime(1024)) {
-            q = Random.nextLong(0, Long.MAX_VALUE).toBigInteger()
-        }
-        keys = generateKeys(p, q)
-    }
     if (programMode == "decrypt") {
+        if (!privateKeyPath.isBlank()) {
+            val inputKeys = readKeyPair(privateKeyPath).map { it.toBigInteger() }
+            keys = Keys(inputKeys[0], BigInteger.ZERO, BigInteger.ZERO, inputKeys[1])
+        }
         // Decrypt the input data
         message.forEach {
             val decryptedMessage = decrypt(it.toBigInteger(), keys)
@@ -73,6 +69,23 @@ fun main(args: Array<String>) {
         }
     }
     if (programMode == "encrypt") {
+        // Check for key path
+        if (!publicKeyPath.isBlank()) {
+            val inputKeys = readKeyPair(publicKeyPath).map { it.toBigInteger() }
+            keys = Keys(inputKeys[0], BigInteger.ZERO, inputKeys[1], BigInteger.ZERO)
+        } else {
+            // Generate keypair
+            var p: BigInteger = BigInteger.ZERO
+            var q: BigInteger = BigInteger.ZERO
+
+            while (!p.isProbablePrime(1024)) {
+                p = Random.nextLong(0, Long.MAX_VALUE).toBigInteger()
+            }
+            while (!q.isProbablePrime(1024)) {
+                q = Random.nextLong(0, Long.MAX_VALUE).toBigInteger()
+            }
+            keys = generateKeys(p, q)
+        }
         message.forEach { single ->
             // If the file contains a
             single.forEach {
