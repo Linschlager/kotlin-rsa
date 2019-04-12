@@ -17,9 +17,8 @@ fun fea(base: BigInteger, exponent: BigInteger, divisor: BigInteger): BigInteger
     var runningPower = base.rem(divisor)
     while (BigInteger.TWO.pow(counter) < exponent) {
         // Compute base^(2*counter) mod divisor
-        if (counter > 0) {
-            runningPower *= runningPower
-            runningPower = runningPower.rem(divisor)
+        if (counter > 0) { // Skip the first run
+            runningPower = (runningPower * runningPower).rem(divisor)
         }
         // Check if counter is included in the list of binary parts
         if (list.contains(counter)) {
