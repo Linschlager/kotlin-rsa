@@ -12,5 +12,6 @@ RSA Cryptosystem implementation in Kotlin
 | --decrypt | Switch | Flag to decrypt the input file using the given private key |
 
 ## Example
-kotlin-rsa.jar --file=input/cipher.txt --private-key=input/sk.txt --decrypt
-kotlin-rsa.jar --file=C:\Users\Linus\Desktop\input.txt --encrypt
+--file=input/cipher.txt --private-key=input/sk.txt --decrypt
+
+--file=C:\Users\Linus\Desktop\input.txt --encrypt
