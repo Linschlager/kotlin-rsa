@@ -3,27 +3,20 @@ package ch.linusvettiger.kotlinrsa
 import java.math.BigInteger
 import java.security.InvalidAlgorithmParameterException
 
-class Keys(val n: BigInteger, val phi: BigInteger, val e: BigInteger, val d: BigInteger) {
-    override fun toString(): String {
-        return "φ(n): %d\nPublic Key: (%d, %d)\nPrivate Key: (%d, %d)".format(phi, n, e, n, d)
-    }
-}
+class Keys(val n: BigInteger, val phi: BigInteger, val e: BigInteger, val d: BigInteger)
 
 fun generateKeys(p: BigInteger, q: BigInteger): Keys {
     if (!p.isProbablePrime(20) || !q.isProbablePrime(20) || p === q) {
         throw InvalidAlgorithmParameterException("p and q have to be two distinct primes")
     }
 
-
     val n = p*q
-    val phi = (p-1.toBigInteger())*(q-1.toBigInteger())
-
-    val e = 65537.toBigInteger()
-
+    val phi = (p-BigInteger.ONE)*(q-BigInteger.ONE)
+    val e = BigInteger.valueOf(65537)
     val d = (eea(phi, e)).y0
 
-    if ((e*d).rem(phi) != 1.toBigInteger()) {
-        error("Invalid KeyPair: " + (e*d).rem(phi))
+    if ((e*d).rem(phi) !== BigInteger.ONE) {
+        error("Invalid KeyPair: e * d mod φ(n) = " + (e*d).rem(phi))
     }
 
     //Test: val m = (fea(message.toBigInteger(), e*d, n))

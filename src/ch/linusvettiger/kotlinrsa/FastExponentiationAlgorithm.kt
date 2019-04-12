@@ -2,6 +2,10 @@ package ch.linusvettiger.kotlinrsa
 
 import java.math.BigInteger
 
+/**
+ * Runs the Fast Exponentiation Algorithm (or Modular Exponentiation Algorithm)
+ * to compute the modulo of big numbers
+ */
 fun fea(base: BigInteger, exponent: BigInteger, divisor: BigInteger): BigInteger {
     var result = BigInteger.ONE
 
