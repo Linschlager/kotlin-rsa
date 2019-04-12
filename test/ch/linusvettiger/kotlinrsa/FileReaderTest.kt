@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test
 
 class FileReaderTest {
     @Test fun `can read file`() {
-        val privateKey = readKeyPair()
+        val privateKey = readKeyPair("input/sk.txt")
         // There need to be exactly two entries in the list (n, d)
         assert(privateKey.isNotEmpty())
         assert(privateKey.size == 2)
