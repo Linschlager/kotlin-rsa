@@ -1,5 +1,6 @@
 # kotlin-rsa
 RSA Cryptosystem implementation in Kotlin
+You can find the executable JAR-file in [here](/artifacts/rsa-in-kotlin.jar)
 
 ## CLI Usage
 
@@ -12,6 +13,6 @@ RSA Cryptosystem implementation in Kotlin
 | --decrypt | Switch | Flag to decrypt the input file using the given private key |
 
 ## Example
---file=input/cipher.txt --private-key=input/sk.txt --decrypt
+java -jar rsa-in-kotlin.jar --file=input/cipher.txt --private-key=input/sk.txt --decrypt
 
---file=C:\Users\Linus\Desktop\input.txt --encrypt
+java -jar rsa-in-kotlin.jar --file=C:\Users\Linus\Desktop\input.txt --encrypt
