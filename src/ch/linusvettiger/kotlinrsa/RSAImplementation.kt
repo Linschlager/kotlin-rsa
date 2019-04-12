@@ -15,7 +15,7 @@ fun generateKeys(p: BigInteger, q: BigInteger): Keys {
     val e = BigInteger.valueOf(65537)
     val d = (eea(phi, e)).y0
 
-    if ((e*d).rem(phi) !== BigInteger.ONE) {
+    if ((e*d).rem(phi) != BigInteger.ONE) {
         error("Invalid KeyPair: e * d mod φ(n) = " + (e*d).rem(phi))
     }
 
