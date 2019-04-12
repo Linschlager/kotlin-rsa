@@ -1,17 +1,25 @@
 package ch.linusvettiger.kotlinrsa
 
 import java.io.File
-import java.math.BigInteger
 
-fun readMessage(): List<BigInteger> {
-    return File("input/cipher.txt").readLines().first().split(',').map{ it.toBigInteger() }
+fun readMessage(filePath: String): List<String> {
+    try {
+        return File(filePath).readLines().first().split(',').map{ it.trim() }
+    } catch (e: Exception) {
+        e.printStackTrace()
+    }
+    return emptyList()
 }
 
-fun readKeyPair(): List<String> {
+fun readKeyPair(filePath: String): List<String> {
     // Read the input file
-    // TODO make input file dynamic
-    val line = File("input/sk.txt").readLines().first()
+    try {
+        val line = File(filePath).readLines().first()
 
-    // Input: (n, d)
-    return line.substring(1,line.length-1).split(',')
+        // Input: (n, d)
+        return line.substring(1, line.length - 1).split(',')
+    } catch (e: Exception) {
+        e.printStackTrace()
+    }
+    return emptyList()
 }
