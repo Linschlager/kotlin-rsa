@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3159aa96-5537-4254-9006-01c0efb8bb88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/text.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1660">
+            <state relative-caret-position="617">
               <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
               <folding>
                 <element signature="e#36#91#0" expanded="true" />
@@ -49,13 +46,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="288">
-                <caret line="18" column="77" lean-forward="true" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/input/text.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -105,6 +99,7 @@
         <option value="$PROJECT_DIR$/test/ch/linusvettiger/kotlinrsa/FastExponentiationAlgorithmTest.kt" />
         <option value="$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/input/text.txt" />
       </list>
     </option>
   </component>
@@ -133,6 +128,11 @@
             <path>
               <item name="rsa-in-kotlin" type="b2602c69:ProjectViewProjectNode" />
               <item name="rsa-in-kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rsa-in-kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rsa-in-kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rsa-in-kotlin" type="b2602c69:ProjectViewProjectNode" />
@@ -224,7 +224,7 @@
     <configuration name="ch.linusvettiger.kotlinrsa.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="rsa-in-kotlin" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="--file=input/cipher.txt --private-key=input/sk.txt --decrypt" />
+      <option name="PROGRAM_PARAMETERS" value="--file=input/text.txt --encrypt" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -261,7 +261,7 @@
       <workItem from="1554972694735" duration="18434000" />
       <workItem from="1555064031989" duration="1506000" />
       <workItem from="1555312768076" duration="373000" />
-      <workItem from="1555327699989" duration="363000" />
+      <workItem from="1555327699989" duration="542000" />
     </task>
     <servers />
   </component>
@@ -298,7 +298,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35519000" />
+    <option name="totallyTimeSpent" value="35698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -453,16 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1660">
-          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
-          <folding>
-            <element signature="e#36#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -470,6 +460,23 @@
             <caret line="18" column="77" lean-forward="true" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinrsa/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="e#36#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/text.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
