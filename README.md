@@ -2,6 +2,8 @@
 RSA Cryptosystem implementation in Kotlin
 You can find the executable JAR-file in [here](/artifacts/rsa-in-kotlin.jar)
 
+***Disclaimer: This is a purely educational project and should not be used in a production environment***
+
 ## CLI Usage
 
 | Parameter | Type | Description | Format |
