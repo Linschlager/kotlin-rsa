@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3159aa96-5537-4254-9006-01c0efb8bb88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="3159aa96-5537-4254-9006-01c0efb8bb88" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Run all tests">
+  <component name="RunManager" selected="Kotlin.ch.linusvettiger.kotlinrsa.MainKt">
     <configuration name="Run all tests" type="JUnit" factoryName="JUnit">
       <option name="PACKAGE_NAME" value="ch.linusvettiger.kotlinrsa" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -222,7 +220,7 @@
     <configuration name="ch.linusvettiger.kotlinrsa.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="rsa-in-kotlin" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="--file=input/text.txt --encrypt" />
+      <option name="PROGRAM_PARAMETERS" value="--file=input/text.txt --encrypt --out-private-key=out/private.txt --out-public-key=out/public.txt --out=out/cipher.txt" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -259,7 +257,7 @@
       <workItem from="1554972694735" duration="18434000" />
       <workItem from="1555064031989" duration="1506000" />
       <workItem from="1555312768076" duration="373000" />
-      <workItem from="1555327699989" duration="2101000" />
+      <workItem from="1555327699989" duration="2209000" />
     </task>
     <servers />
   </component>
@@ -296,11 +294,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37257000" />
+    <option name="totallyTimeSpent" value="37365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22257721" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
