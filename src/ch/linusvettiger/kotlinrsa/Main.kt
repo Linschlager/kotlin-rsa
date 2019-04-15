@@ -1,8 +1,8 @@
 package ch.linusvettiger.kotlinrsa
 
-import java.io.File
+import java.math.BigDecimal
 import java.math.BigInteger
-import kotlin.random.Random
+import java.util.*
 
 // Implement the outside interface
 fun main(args: Array<String>) {
@@ -92,10 +92,10 @@ fun main(args: Array<String>) {
             var q: BigInteger = BigInteger.ZERO
 
             while (!p.isProbablePrime(1024)) {
-                p = Random.nextLong(0, Long.MAX_VALUE).toBigInteger()
+                p = BigInteger(1_000, Random())
             }
-            while (!q.isProbablePrime(1024)) {
-                q = Random.nextLong(0, Long.MAX_VALUE).toBigInteger()
+            while (!q.isProbablePrime(1024) || p === q) {
+                q = BigInteger(1_000, Random())
             }
             keys = generateKeys(p, q)
         }
