@@ -5,7 +5,7 @@ import java.io.File
 fun writeFile(fileName: String, content: String) {
     val f = File(fileName)
     if (f.exists()) {
-        error("%s already exists. Please delete the file and try again".format(fileName))
+        error("$fileName already exists. Please delete the file and try again")
     }
     f.createNewFile()
     f.writeText(content)

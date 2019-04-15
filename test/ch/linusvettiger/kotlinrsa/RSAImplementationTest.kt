@@ -21,9 +21,9 @@ class RSAImplementationTest {
         val k = generateKeys(929.toBigInteger(), 619.toBigInteger())
         val message = 100.toBigInteger()
         val encryptedMessage = encrypt(message, k)
-        println("Encrypted Message: %d".format(encryptedMessage))
+        //println("Encrypted Message: $encryptedMessage")
         val decryptedMessage = decrypt(encryptedMessage, k)
-        println("Decrypted Message: %d".format(decryptedMessage))
+        //println("Decrypted Message: $decryptedMessage")
         assertEquals(message, decryptedMessage)
     }
 
@@ -32,9 +32,9 @@ class RSAImplementationTest {
         val k = generateKeys(602521.toBigInteger(), 1226741.toBigInteger())
         val message = "123456789".toBigInteger()
         val encryptedMessage = encrypt(message, k)
-        println("Encrypted Message: %d".format(encryptedMessage))
+        //println("Encrypted Message: $encryptedMessage")
         val decryptedMessage = decrypt(encryptedMessage, k)
-        println("Decrypted Message: %d".format(decryptedMessage))
+        //println("Decrypted Message: $decryptedMessage")
         assertEquals(message, decryptedMessage)
     }
 }

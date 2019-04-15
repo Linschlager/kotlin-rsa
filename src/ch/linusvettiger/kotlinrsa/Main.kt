@@ -116,10 +116,10 @@ fun main(args: Array<String>) {
     }
 
     if (outputPublicKeyPath.isNotEmpty()) {
-        writeFile(outputPublicKeyPath, "(%d,%d)".format(keys.n, keys.e))
+        writeFile(outputPublicKeyPath, "(${keys.n},${keys.e}$)")
     }
     if (outputPrivateKeyPath.isNotEmpty()) {
-        writeFile(outputPrivateKeyPath, "(%d,%d)".format(keys.n, keys.d))
+        writeFile(outputPrivateKeyPath, "(${keys.n},${keys.d})")
     }
 
     println()
@@ -127,8 +127,8 @@ fun main(args: Array<String>) {
         println("Key used: ")
         // Only output the actually set values
         if (keys.e > BigInteger.ZERO)
-            println("Public Key (n, e) = (%d, %d)".format(keys.n, keys.e))
+            println("Public Key (n, e) = (${keys.n}, ${keys.e})")
         if (keys.d > BigInteger.ZERO)
-            println("Private Key (n, d) = (%d, %d)".format(keys.n, keys.d))
+            println("Private Key (n, d) = (${keys.n}, ${keys.d})")
     }
 }
