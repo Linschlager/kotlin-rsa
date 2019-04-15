@@ -1,5 +1,6 @@
 package ch.linusvettiger.kotlinrsa
 
+import java.io.File
 import java.math.BigInteger
 import kotlin.random.Random
 
@@ -8,14 +9,21 @@ fun main(args: Array<String>) {
     if (args.isEmpty()) {
         println("Usage:")
         println("--file=<path-to-file> File to encrypt/decrypt. Format: Comma separated characters")
+        println("--out=<path-to-file> File to output the encrypted/decrypted Text")
+        println("--out-private-key=<path-to-file> File to output the used private key")
+        println("--out-public-key=<path-to-file> File to output the used private key")
         println("--private-key=<path-to-file> File containing the private key. Format (n,d)")
         println("--public-key=<path-to-file> File containing the public key. Format: (n,e)")
         println("--encrypt Encrypt the input file")
         println("--decrypt Decrypt the input file using --private-key")
+        println("--debug Enable debugging mode")
         error("No arguments provided")
     }
 
     var inputFilePath = ""
+    var outputFilePath = ""
+    var outputPrivateKeyPath = ""
+    var outputPublicKeyPath = ""
     var privateKeyPath = ""
     var publicKeyPath = ""
     var programMode = ""
@@ -28,8 +36,11 @@ fun main(args: Array<String>) {
         }
         when {
             parts[0] == "--file" -> inputFilePath = parts[1]
+            parts[0] == "--out" -> outputFilePath = parts[1]
             parts[0] == "--private-key" -> privateKeyPath = parts[1]
+            parts[0] == "--out-private-key" -> outputPrivateKeyPath = parts[1]
             parts[0] == "--public-key" -> publicKeyPath = parts[1]
+            parts[0] == "--out-public-key" -> outputPublicKeyPath = parts[1]
             parts[0] == "--decrypt" -> programMode = "decrypt"
             parts[0] == "--encrypt" -> programMode = "encrypt"
             parts[0] == "--debug" -> debug = true
@@ -88,14 +99,29 @@ fun main(args: Array<String>) {
             }
             keys = generateKeys(p, q)
         }
+        var output = ""
         message.forEach { single ->
             // If the file contains a
             single.forEach {
-                print(encrypt(it.toInt().toBigInteger(), keys))
-                print(",")
+                if (output.isNotEmpty()) {
+                    output += ","
+                }
+                output += (encrypt(it.toInt().toBigInteger(), keys))
             }
         }
+        if (outputFilePath.isNotEmpty()) {
+            writeFile(outputFilePath, output)
+        }
+        println(output)
     }
+
+    if (outputPublicKeyPath.isNotEmpty()) {
+        writeFile(outputPublicKeyPath, "(%d,%d)".format(keys.n, keys.e))
+    }
+    if (outputPrivateKeyPath.isNotEmpty()) {
+        writeFile(outputPrivateKeyPath, "(%d,%d)".format(keys.n, keys.d))
+    }
+
     println()
     if (debug) {
         println("Key used: ")
