@@ -16,6 +16,8 @@ You can find the executable JAR-file in [here](/artifacts/rsa-in-kotlin.jar)
 | --decrypt | Switch | Flag to decrypt the input file using the given private key |
 | --debug | Switch | Flag to enable debug output of Keys used (Public/Private Key)
 
+*Currently, the program does not overwrite any existing files but rather throw an error and abort*
+
 ## Example
 java -jar rsa-in-kotlin.jar --file=input/cipher.txt --private-key=input/sk.txt --decrypt --out=output/text.txt
 
