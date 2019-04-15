@@ -19,6 +19,7 @@ fun main(args: Array<String>) {
     var privateKeyPath = ""
     var publicKeyPath = ""
     var programMode = ""
+    var debug = false
     args.forEach{
         val parts = if (it.contains('=')) {
             it.split('=')
@@ -31,6 +32,7 @@ fun main(args: Array<String>) {
             parts[0] == "--public-key" -> publicKeyPath = parts[1]
             parts[0] == "--decrypt" -> programMode = "decrypt"
             parts[0] == "--encrypt" -> programMode = "encrypt"
+            parts[0] == "--debug" -> debug = true
         }
     }
     /*
@@ -95,10 +97,12 @@ fun main(args: Array<String>) {
         }
     }
     println()
-    println("Key used: ")
-    // Only output the actually set values
-    if (keys.e > BigInteger.ZERO)
-        println("Public Key (n, e) = (%d, %d)".format(keys.n, keys.e))
-    if (keys.d > BigInteger.ZERO)
-        println("Private Key (n, d) = (%d, %d)".format(keys.n, keys.d))
+    if (debug) {
+        println("Key used: ")
+        // Only output the actually set values
+        if (keys.e > BigInteger.ZERO)
+            println("Public Key (n, e) = (%d, %d)".format(keys.n, keys.e))
+        if (keys.d > BigInteger.ZERO)
+            println("Private Key (n, d) = (%d, %d)".format(keys.n, keys.d))
+    }
 }
